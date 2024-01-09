@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+</head>
+<body>
+    <div><span > test msg </span></div>
+    <h2> 測試頁面 </h2>
+    <div><span th:insert="/templatePackage/template01.html :: header01">test msg</span></div>
+
+    <div><span th:replace="/templatePackage/template02.html :: header01">test msg</span></div>
+
+    <!-- 呼叫的人要給參數part.1，template03傳模板過來 -->
+    <footer><span th:insert="/templatePackage/template03.html :: header02(汽車模型,紅色)">test msg</span></footer>
+
+    <hr>
+    <!-- 呼叫的人要給參數part.2，template04傳模板過來 -->
+    <div>
+        <span th:replace="/templatePackage/template04.html :: DemoInfo(${name},${url})">test msg</span>
+    </div>
+
+</body>
+</html>

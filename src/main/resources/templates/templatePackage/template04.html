@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div><span th:fragment="DemoInfo(name,url)">  <!-- 送參數去給index做變化 -->
+        <h3>公司名稱: <p th:text="${ name }">test msg</p></h3>
+        <h3>頁面網址: <p th:text="${ url }">test msg</p></h3>
+    </span></div>
+</body>
+</html>

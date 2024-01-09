@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div><span th:fragment="header02(ID,Color)">  <!-- 送參數去給index做變化 -->
+        <h3>玩具種類: <p th:text="${ ID }">test msg</p></h3>
+        <h3>顏色選擇: <p th:text="${ Color }">test msg</p></h3>
+    </span></div>
+</body>
+</html>
